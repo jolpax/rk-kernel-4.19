@@ -333,7 +333,7 @@
 		compatible = "wlan-platdata";
 		rockchip,grf = <&grf>;
 		wifi_chip_type = "ap6398s";
-		status = "okay";
+		status = "disabled";
 	};
 
 	wireless_bluetooth: wireless-bluetooth {
@@ -348,7 +348,7 @@
 		BT,reset_gpio    = <&gpio3 RK_PA0 GPIO_ACTIVE_HIGH>;
 		BT,wake_gpio     = <&gpio3 RK_PA1 GPIO_ACTIVE_HIGH>;
 		BT,wake_host_irq = <&gpio3 RK_PA2 GPIO_ACTIVE_HIGH>;
-		status = "okay";
+		status = "disabled";
 	};
 
 	test-power {
@@ -372,10 +372,10 @@
 
 &can1 {
 	assigned-clocks = <&cru CLK_CAN1>;
-	assigned-clock-rates = <150000000>;
+	assigned-clock-rates = <200000000>;
 	pinctrl-names = "default";
 	pinctrl-0 = <&can1m1_pins>;
-	status = "disabled";
+	status = "okay";
 };
 
 &can2 {
