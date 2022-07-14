@@ -1544,6 +1544,18 @@
 	vccio7-supply = <&vcc_3v3>;
 };
 
+&pwm1 {
+	status = "okay";
+};
+
+&pwm2 {
+	status = "okay";
+};
+
+&pwm3 {
+	status = "okay";
+};
+
 &pwm4 {
 	status = "okay";
 };

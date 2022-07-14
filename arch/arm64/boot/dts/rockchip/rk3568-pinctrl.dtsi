@@ -11,7 +11,6 @@
  * by adding changes at end of this file.
  */
 &pinctrl {
-	xcxca;cvcv
 	acodec {
 		/omit-if-no-ref/
 		acodec_pins: acodec-pins {
